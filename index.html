@@ -1,5 +1,7 @@
 <title>HTML範例</title>
 <link rel="icon" href="https://raw.githubusercontent.com/imneverdied/HTML/gh-pages/Chrome.ico" type="image/x-icon" />
+ <p id="para">Some text here</p>
+  <button onclick="changeColor();">換顏色</button>
 <select name="pets">
     <option value="">請選擇你最愛的寵物</option>
     <option value="dog">Dog</option>
@@ -117,3 +119,17 @@ radio (radio button) 是選項按鈕：<br>
 
 <center>This text will be centered.
 <p>文字置中</p></center>
+<script type="text/javascript">
+function changeColor() {
+  var elem = document.getElementById('para');
+  var newColor=elem.style.color;
+
+  if(newColor=='blue')
+  {newColor='red'
+  }
+  else
+  {newColor='blue'}
+  
+  elem.style.color = newColor;
+}
+</script>
